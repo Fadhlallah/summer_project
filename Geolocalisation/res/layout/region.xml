@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/region_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="region" />
+
+    <TextView
+        android:id="@+id/text_pays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/region_region"
+        android:layout_below="@+id/region_region"
+        android:layout_marginTop="24dp"
+        android:text="pays:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/region_pays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_pays"
+        android:layout_below="@+id/text_pays"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="pays" />
+
+    
+
+    <TextView
+        android:id="@+id/text_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/region_region"
+        android:text="Region:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/chercher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/region_pays"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/chercher" />
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/region_pays"
+        android:layout_below="@+id/region_pays"
+        android:checkedButton="@+id/nimrb1" >
+
+        <RadioButton
+            android:id="@+id/radio12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/region_pays"
+            android:layout_below="@+id/region_pays"
+            android:layout_marginTop="21dp"
+            android:text="hotel" 
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio1"
+            android:layout_below="@+id/radio1"
+            android:text="aeroport" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/map2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/group2"
+        android:layout_below="@+id/group2"
+        android:text="map" />
+
+</RelativeLayout>

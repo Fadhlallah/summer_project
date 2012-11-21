@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00187F"
+        android:text="@string/hello" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="60dp"
+        android:text="choisissez une distance:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" 
+        android:id="@+id/prox_msg"/>
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prox_msg"
+        android:layout_below="@+id/prox_msg"
+        android:layout_marginTop="24dp"
+        android:ems="10" 
+        android:hint="distance en km"
+        />
+
+    <RadioGroup
+        android:id="@+id/prox_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distance"
+        android:layout_centerVertical="true"
+        >
+
+        <RadioButton
+            android:id="@+id/prox_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="hotels" />
+
+        <RadioButton
+            android:id="@+id/prox_aero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="aeroports" />
+    </RadioGroup>
+
+     <Button
+         android:id="@+id/prox_c"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/distance"
+         android:layout_below="@+id/prox_group"
+         android:background="@drawable/chercher" />
+
+    <CheckBox
+        android:id="@+id/prox_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prox_group"
+        android:layout_alignTop="@+id/prox_c"
+        android:text="map" />
+
+</RelativeLayout>

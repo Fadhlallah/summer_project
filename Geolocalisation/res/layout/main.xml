@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00187F"
+        android:text="@string/hello" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/google_red"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/google"
+        android:layout_alignBottom="@+id/google"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/exit"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/nom"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/prox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/prox"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/region"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>

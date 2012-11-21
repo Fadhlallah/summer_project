@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GeolocalisationActivity!</string>
+    <string name="app_name">Geolocalisation</string>
+ <string name="map">09ptrVapympiJ7zQO6vl2-RjegGveTQpugHvmag</string>
+</resources>

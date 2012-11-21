@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- Tableau permettant d'afficher tout le contenu d'un bloc -->
+	<TableLayout android:id="@+id/blocCheck" 
+		android:background="@drawable/back2"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:layout_marginTop="25px"
+		android:layout_marginBottom="25px">
+
+		<!-- La première ligne affiche deux libellés côte à côte (le nom et sa valeur) -->
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="4sp"
+			android:paddingBottom="4sp">
+			<LinearLayout
+				android:orientation="horizontal" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:paddingLeft="20sp"
+				android:layout_weight="1" 
+				android:layout_gravity="center_vertical">
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="20sp"
+					android:text="nom:" 
+					android:layout_gravity="left"
+					android:layout_marginRight="5sp" />
+				<TextView android:id="@+id/info_nom" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="20sp"
+					android:layout_gravity="left" />
+			</LinearLayout>
+		</TableRow>
+		
+		<!-- Cette ligne affiche les deux libellés du prénom et la checkbox -->
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="4sp"
+			android:paddingBottom="4sp"
+			android:baselineAligned="true">
+			<LinearLayout
+				android:orientation="horizontal" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:paddingLeft="20sp"
+				android:layout_weight="1" 
+				android:layout_gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="20sp"
+					android:text="region:" 
+					android:layout_gravity="left"
+					android:layout_marginRight="5sp" />
+				<TextView android:id="@+id/info_reg" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="20sp"
+					android:layout_gravity="left" />
+			</LinearLayout>
+	</TableRow>
+
+		<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginRight="5sp"
+		            android:text="pays:"
+		            android:textSize="20sp" />
+
+		        <TextView
+		            android:id="@+id/info_pay"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:textSize="20sp" />
+		    </LinearLayout>
+		</TableRow>
+	<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginRight="5sp"
+		            android:text="tel:"
+		            android:textSize="20sp"
+		           />
+
+		        <TextView
+		            android:id="@+id/info_tel"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:textSize="20sp"
+		            android:clickable="true" />
+		    </LinearLayout>
+		</TableRow>
+		<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginRight="5sp"
+		            android:text="fax:"
+		            android:textSize="20sp"
+		             />
+
+		        <TextView
+		            android:id="@+id/info_fax"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:textSize="20sp"
+		            android:clickable="true" />
+		    </LinearLayout>
+		</TableRow>
+		<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginRight="5sp"
+		            android:text="mail:"
+		            android:textSize="20sp"
+		             />
+
+		        <TextView
+		            android:id="@+id/info_mai"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:textSize="20sp"
+		            android:clickable="true" />
+		    </LinearLayout>
+		    
+		</TableRow>
+		<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginRight="5sp"
+		            android:text="site:"
+		            android:textSize="20sp"
+		             />
+
+		        <TextView
+		            android:id="@+id/info_sit"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:textSize="20sp"
+		            android:clickable="true" />
+		    </LinearLayout>
+		
+		</TableRow>
+			<TableRow
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:baselineAligned="true"
+		    android:paddingLeft="4sp" 
+		    android:paddingBottom="4sp">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+		        android:paddingLeft="20sp" >
+
+		        <TextView
+		            android:id="@+id/info_galerie"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_weight="1.13"
+		            android:clickable="true"
+		            android:text="Galerie(cliquez ici)"
+		            android:textColor="#FFDAA520"
+		            android:textSize="25sp" 
+		            android:textStyle="italic"/>
+		    </LinearLayout>
+		
+		</TableRow>
+		    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageview"
+    
+    />
+</TableLayout>
+
+</LinearLayout>
